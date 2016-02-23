@@ -1,26 +1,16 @@
 apply plugin: 'java'
-apply plugin: 'idea'
 apply plugin: 'jetty'
+
+jettyRun {
+    contextPath = ''
+}
 
 repositories {
     mavenCentral()
-    maven {
-        url "http://dl.bintray.com/greghaskins/maven"
-    }
 }
 
 dependencies {
     compile(
-            'org.apache.commons:commons-lang3:3.2.1',
-            'org.apache.commons:commons-io:1.3.2',
-            'com.google.guava:guava:16.0',
-//            'javax.ws.rs:jsr311-api:1.1.1',
-//            'com.sun.jersey:jersey-server:1.19'
             'com.sun.jersey:jersey-servlet:1.19'
-    )
-    testCompile(
-            'com.greghaskins:spectrum:0.4.4',
-            'org.assertj:assertj-core:2.2.0',
-            'junit:junit:4.11'
     )
 }

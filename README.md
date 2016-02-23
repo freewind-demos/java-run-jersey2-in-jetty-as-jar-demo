@@ -1,9 +1,9 @@
 How to run
 ===
 
-`gradle jettyRun`
+`gradle clean jettyRun`
 
-Then visit `http://localhost:8080/rs-demo/rest/hello/aaa`
+Then visit `http://localhost:8080/rest/hello/aaa`
 
 Note
 ===
